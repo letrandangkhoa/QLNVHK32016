@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F2CF42E-B19D-470F-99DF-BBEFD58444A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pham_Thi_Chieu</RootNamespace>
+    <AssemblyName>Pham_Thi_Chieu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\Users\PHAMCONGCHUC\Downloads\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_XuLi\Class_BangCap.cs" />
+    <Compile Include="Class_XuLi\Class_DangNhap.cs" />
+    <Compile Include="Class_XuLi\Class_PhongBan.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_User_Control\User_BangCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_BangCap.Designer.cs">
+      <DependentUpon>User_BangCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_ChucVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_ChucVu.Designer.cs">
+      <DependentUpon>User_ChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_NhanVien.Designer.cs">
+      <DependentUpon>User_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_PhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_PhongBan.Designer.cs">
+      <DependentUpon>User_PhongBan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="_User_Control\User_BangCap.resx">
+      <DependentUpon>User_BangCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_ChucVu.resx">
+      <DependentUpon>User_ChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_NhanVien.resx">
+      <DependentUpon>User_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_PhongBan.resx">
+      <DependentUpon>User_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_Form\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\1439824072_printer.png" />
+    <Content Include="Icons\1440062400_calculator.png" />
+    <Content Include="Icons\1440062450_dollar.png" />
+    <Content Include="Icons\1440069332_calculator-pencil.png" />
+    <Content Include="Icons\1440069632_51.png" />
+    <Content Include="Icons\1440575179_folder-search.png" />
+    <Content Include="Icons\1447071746_Information.png" />
+    <Content Include="Icons\1447073146_Information.png" />
+    <Content Include="Icons\1447073208_Help.png" />
+    <Content Include="Icons\1447073208_Help1.png" />
+    <Content Include="Icons\1447354955_sign-add.png" />
+    <Content Include="Icons\AddFile_16x16.png" />
+    <Content Include="Icons\AddGroupHeader_32x32.png" />
+    <Content Include="Icons\ajax-loader.gif" />
+    <Content Include="Icons\alignjustify_16x16.png" />
+    <Content Include="Icons\Apply_16x16.png" />
+    <Content Include="Icons\apply_32x32.png" />
+    <Content Include="Icons\Area_32x32.png" />
+    <Content Include="Icons\Area_32x321.png" />
+    <Content Include="Icons\AssignToMe_16x16.png" />
+    <Content Include="Icons\Backward_16x16.png" />
+    <Content Include="Icons\Barcode_16x16.png" />
+    <Content Include="Icons\Bar_32x32.png" />
+    <Content Include="Icons\bg.png" />
+    <Content Include="Icons\bgGroup.png" />
+    <Content Include="Icons\bglogin.png" />
+    <Content Include="Icons\bottom.png" />
+    <Content Include="Icons\bta.png" />
+    <Content Include="Icons\btn.png" />
+    <Content Include="Icons\change_password.png" />
+    <Content Include="Icons\ChartsShowLegend_16x16.png" />
+    <Content Include="Icons\chartsshowlegend_32x32.png" />
+    <Content Include="Icons\chartyaxissettings_32x32.png" />
+    <Content Include="Icons\ClearFormatting_16x16.png" />
+    <Content Include="Icons\close.png" />
+    <Content Include="Icons\close1.png" />
+    <Content Include="Icons\closehover.png" />
+    <Content Include="Icons\close_16x16.png" />
+    <Content Include="Icons\close_32x32.png" />
+    <Content Include="Icons\convert_16x16.png" />
+    <Content Include="Icons\convert_32x32.png" />
+    <Content Include="Icons\Customization_16x16.png" />
+    <Content Include="Icons\Customization_32x32.png" />
+    <Content Include="Icons\database_32x32.png" />
+    <Content Include="Icons\DeleteFooter_16x16.png" />
+    <Content Include="Icons\DeleteFooter_32x32.png" />
+    <Content Include="Icons\Delete_16x16.png" />
+    <Content Include="Icons\Delta_cf.png" />
+    <Content Include="Icons\Delta_Max.png" />
+    <Content Include="Icons\dmk.png" />
+    <Content Include="Icons\doimatkhau.png" />
+    <Content Include="Icons\DoiMatKhau2.png" />
+    <Content Include="Icons\dolaplai.PNG" />
+    <Content Include="Icons\DoubleNext_16x16.png" />
+    <Content Include="Icons\down.png" />
+    <Content Include="Icons\DrillDownOnArguments_Chart_32x32.png" />
+    <Content Include="Icons\EditTask_16x16.png" />
+    <Content Include="Icons\EditTask_32x32.png" />
+    <Content Include="Icons\Edit_32x32.png" />
+    <Content Include="Icons\Export_16x16.png" />
+    <Content Include="Icons\Export_32x32.png" />
+    <Content Include="Icons\First_16x16.png" />
+    <Content Include="Icons\Forward_16x16.png" />
+    <Content Include="Icons\FullStackedLine_16x16.png" />
+    <Content Include="Icons\FullStackedLine_32x32.png" />
+    <Content Include="Icons\groups_20.png" />
+    <Content Include="Icons\Image1.png" />
+    <Content Include="Icons\Image2.png" />
+    <Content Include="Icons\indentincrease_16x16.png" />
+    <Content Include="Icons\InsertHeader_16x16.png" />
+    <Content Include="Icons\InsertHeader_32x32.png" />
+    <Content Include="Icons\keys.png" />
+    <Content Include="Icons\keys16.png" />
+    <Content Include="Icons\Kính_lúp_icon.png" />
+    <Content Include="Icons\Last_16x16.png" />
+    <Content Include="Icons\line.png" />
+    <Content Include="Icons\loadfrom_32x32.png" />
+    <Content Include="Icons\loading_small.gif" />
+    <Content Include="Icons\login_iconH2.png" />
+    <Content Include="Icons\MayIN.png" />
+    <Content Include="Icons\min.png" />
+    <Content Include="Icons\mini.png" />
+    <Content Include="Icons\mn.png" />
+    <Content Include="Icons\mn1.png" />
+    <Content Include="Icons\newcontact_16x16.png" />
+    <Content Include="Icons\Next_16x16.png" />
+    <Content Include="Icons\ok.png" />
+    <Content Include="Icons\p2.PNG" />
+    <Content Include="Icons\phuchoidulieu.png" />
+    <Content Include="Icons\Prev_16x16.png" />
+    <Content Include="Icons\Print_16x16.png" />
+    <Content Include="Icons\print_32x32.png" />
+    <Content Include="Icons\Print_32x321.png" />
+    <Content Include="Icons\publicfix_32x32.png" />
+    <Content Include="Icons\q.PNG" />
+    <Content Include="Icons\redo_16x16.png" />
+    <Content Include="Icons\Redo_32x32.png" />
+    <Content Include="Icons\res.png" />
+    <Content Include="Icons\res16.png" />
+    <Content Include="Icons\saoluudulieu.png" />
+    <Content Include="Icons\SaveAll_16x16.png" />
+    <Content Include="Icons\SavePageSetup_32x32.png" />
+    <Content Include="Icons\SecurityRoles_32x32_Standard.png" />
+    <Content Include="Icons\Squeeze_16x16.png" />
+    <Content Include="Icons\Template_16x16.png" />
+    <Content Include="Icons\thetich.PNG" />
+    <Content Include="Icons\thetichf.PNG" />
+    <Content Include="Icons\thums.png" />
+    <Content Include="Icons\thums1.png" />
+    <Content Include="Icons\thums11.png" />
+    <Content Include="Icons\undo_16x16.png" />
+    <Content Include="Icons\up.png" />
+    <Content Include="Icons\up_32x32.png" />
+    <Content Include="Icons\UserGroup_16x16.png" />
+    <Content Include="Icons\Watermark_16x16.png" />
+    <Content Include="Icons\WithTextWrapping_BottomLeft_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
