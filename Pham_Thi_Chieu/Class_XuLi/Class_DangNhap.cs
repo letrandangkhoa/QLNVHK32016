@@ -15,7 +15,7 @@ namespace Pham_Thi_Chieu.Class_XuLi
         #region Kiểm tra thông tin đăng nhập
         public bool Login_DangNhap(string TenDN, string MatKhau)
         {
-            string sql = "select a.ID from User_Admin a where a.UserName='" + TenDN + "' and Pass='" + MatKhau + "'";
+            string sql = "select * from User_Admin1 where UserName='" + TenDN + "' and Pass='" + MatKhau + "'";
             dt = db.Excute(sql);
             if (dt.Rows.Count > 0)
             {
@@ -25,9 +25,24 @@ namespace Pham_Thi_Chieu.Class_XuLi
             {
                 return false;
             }
-
         }
         #endregion
+        #endregion
+
+        #region Đổi Mật Khẩu
+        public bool DoiMatKhau(string id, string pass)
+        {
+            try
+            {
+                string sql = "update User_Admin1 set Pass= N'" + pass + "' where UserName = '" + id + "'";
+                db.ExcuteNonQuery(sql);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         #endregion
     }
 }

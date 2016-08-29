@@ -152,6 +152,8 @@
             // 
             // dgv_PhongBan
             // 
+            this.dgv_PhongBan.AllowUserToAddRows = false;
+            this.dgv_PhongBan.AllowUserToDeleteRows = false;
             this.dgv_PhongBan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -163,6 +165,7 @@
             this.Column3});
             this.dgv_PhongBan.Location = new System.Drawing.Point(0, 19);
             this.dgv_PhongBan.Name = "dgv_PhongBan";
+            this.dgv_PhongBan.ReadOnly = true;
             this.dgv_PhongBan.Size = new System.Drawing.Size(637, 309);
             this.dgv_PhongBan.TabIndex = 0;
             this.dgv_PhongBan.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgv_PhongBan_CellBeginEdit);
@@ -174,6 +177,7 @@
             this.Column1.DataPropertyName = "ID";
             this.Column1.HeaderText = "Column1";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
             // Column2
@@ -181,6 +185,7 @@
             this.Column2.DataPropertyName = "Ten_PB";
             this.Column2.HeaderText = "Tên Phòng Ban";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 300;
             // 
             // Column3
@@ -188,6 +193,7 @@
             this.Column3.DataPropertyName = "MoTa";
             this.Column3.HeaderText = "Mô tả";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Width = 1000;
             // 
             // User_PhongBan

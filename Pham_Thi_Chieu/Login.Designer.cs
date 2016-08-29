@@ -70,6 +70,7 @@
             // 
             this.txt_MatKhau.Location = new System.Drawing.Point(101, 131);
             this.txt_MatKhau.Name = "txt_MatKhau";
+            this.txt_MatKhau.PasswordChar = '*';
             this.txt_MatKhau.Size = new System.Drawing.Size(153, 20);
             this.txt_MatKhau.TabIndex = 1;
             // 
@@ -132,6 +133,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đại học Mở Tp.HCM";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

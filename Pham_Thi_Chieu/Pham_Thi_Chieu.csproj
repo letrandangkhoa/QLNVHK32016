@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pham_Thi_Chieu</RootNamespace>
     <AssemblyName>Pham_Thi_Chieu</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,10 +36,13 @@
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>C:\Users\PHAMCONGCHUC\Downloads\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,9 +54,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class_XuLi\Class_BangCap.cs" />
+    <Compile Include="Class_XuLi\Class_ChiPhiKhac.cs" />
+    <Compile Include="Class_XuLi\Class_ChucVu.cs" />
     <Compile Include="Class_XuLi\Class_DangNhap.cs" />
+    <Compile Include="Class_XuLi\Class_HeSoCoBan.cs" />
+    <Compile Include="Class_XuLi\Class_NhanVien.cs" />
     <Compile Include="Class_XuLi\Class_PhongBan.cs" />
+    <Compile Include="Class_XuLi\Class_TienThuong.cs" />
+    <Compile Include="Class_XuLi\PhuCap.cs" />
+    <Compile Include="Class_XuLi\Class_TinhLuong.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="DataSet_RpBangLuong.cs">
+      <DependentUpon>DataSet_RpBangLuong.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_RpBangLuong.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RpBangLuong.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +87,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_User_Control\ChucVu.cs" />
+    <Compile Include="_User_Control\PhuCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\PhuCap.Designer.cs">
+      <DependentUpon>PhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\UserDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\UserDoiMatKhau.Designer.cs">
+      <DependentUpon>UserDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_HeSoCoBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_HeSoCoBan.Designer.cs">
+      <DependentUpon>User_HeSoCoBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_KhoanPhiKhac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_KhoanPhiKhac.Designer.cs">
+      <DependentUpon>User_KhoanPhiKhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_User_Control\User_TinhLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_TinhLuong.Designer.cs">
+      <DependentUpon>User_TinhLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="_User_Control\User_BangCap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +142,12 @@
     <Compile Include="_User_Control\User_PhongBan.Designer.cs">
       <DependentUpon>User_PhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="_User_Control\User_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_User_Control\User_Report.Designer.cs">
+      <DependentUpon>User_Report.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,7 +162,21 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report_LuongNhanVien.rdlc" />
+    <EmbeddedResource Include="_User_Control\UserDoiMatKhau.resx">
+      <DependentUpon>UserDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_HeSoCoBan.resx">
+      <DependentUpon>User_HeSoCoBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_KhoanPhiKhac.resx">
+      <DependentUpon>User_KhoanPhiKhac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_TinhLuong.resx">
+      <DependentUpon>User_TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_User_Control\User_BangCap.resx">
       <DependentUpon>User_BangCap.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +189,20 @@
     <EmbeddedResource Include="_User_Control\User_PhongBan.resx">
       <DependentUpon>User_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="_User_Control\User_Report.resx">
+      <DependentUpon>User_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet_RpBangLuong.xsc">
+      <DependentUpon>DataSet_RpBangLuong.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RpBangLuong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RpBangLuong.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_RpBangLuong.xss">
+      <DependentUpon>DataSet_RpBangLuong.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -16,12 +16,15 @@ namespace Pham_Thi_Chieu
         {
             InitializeComponent();
         }
+        public static string taiKhoan, matKhau;
+        public static bool coHieu_Reset;
         Class_XuLi.Class_DangNhap nv = new Class_XuLi.Class_DangNhap();
+
         frm_Main _frm;
         #region thoát chương trình
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         #endregion
 
@@ -40,17 +43,33 @@ namespace Pham_Thi_Chieu
             if(nv.Login_DangNhap(txt_TenDN.Text,txt_MatKhau.Text)==true)
             {
                 _frm = new frm_Main();
-                //this.Close();
+                this.Hide();
+                Login.taiKhoan = txt_TenDN.Text;
+                Login.matKhau = txt_MatKhau.Text;
                 _frm.ShowDialog();
+                if (Login.coHieu_Reset == true)
+                {
+                    txt_MatKhau.Text = "";
+                    txt_TenDN.Text = "";
+                    this.Show();
+                }
+                else
+                    this.Close();
                 
             }
             else
             {
+                MessageBox.Show("Tài Khoản Hoặc Mật Khẩu Không Đúng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             #endregion
         }
         #endregion
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Login.coHieu_Reset = false;
+        }
 
     }
 }

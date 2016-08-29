@@ -24,7 +24,7 @@ namespace Pham_Thi_Chieu._User_Control
         #endregion
 
         #region Khai báo hàm
-            #region settextbox
+        #region settextbox
         public void Settextbox()
         {
             txt_ten.Text = null;
@@ -168,8 +168,15 @@ namespace Pham_Thi_Chieu._User_Control
             #region Sửa thông tin thay đổi
             if (nv.BangCap_Sua(int.Parse(dr.Cells[0].Value.ToString()), dr.Cells[1].Value.ToString(), dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(), dr.Cells[4].Value.ToString())==true)
             {
-                dgv_BangCap.DataSource = nv.Load_BangCap();
-                MessageBox.Show("Cập nhật thành công", "Thông báo");
+                try
+                {
+                    dgv_BangCap.DataSource = nv.Load_BangCap();
+                    MessageBox.Show("Cập nhật thành công", "Thông báo");
+                }
+                catch
+                {
+                    return;
+                }
             }
             else
             {

@@ -29,12 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_BangCap));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Xoa = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_BangCap = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_luongngaynghi = new System.Windows.Forms.TextBox();
             this.txt_hsl = new System.Windows.Forms.TextBox();
@@ -42,13 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_mota = new System.Windows.Forms.TextBox();
             this.txt_ten = new System.Windows.Forms.TextBox();
-            this.btn_Luu = new System.Windows.Forms.Button();
-            this.btn_Xoa = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_BangCap)).BeginInit();
@@ -77,6 +77,35 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bằng cấp";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.BackColor = System.Drawing.Color.White;
+            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
+            this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Xoa.Location = new System.Drawing.Point(744, 76);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(88, 41);
+            this.btn_Xoa.TabIndex = 5;
+            this.btn_Xoa.Text = "XÓA";
+            this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.BackColor = System.Drawing.Color.White;
+            this.btn_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Luu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.Image")));
+            this.btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Luu.Location = new System.Drawing.Point(744, 35);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(88, 41);
+            this.btn_Luu.TabIndex = 4;
+            this.btn_Luu.Text = "LƯU";
+            this.btn_Luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Luu.UseVisualStyleBackColor = false;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // label5
             // 
@@ -125,6 +154,44 @@
             this.dgv_BangCap.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgv_BangCap_CellBeginEdit);
             this.dgv_BangCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_BangCap_CellClick);
             this.dgv_BangCap.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_BangCap_CellEndEdit);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID";
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Ten_BC";
+            this.Column2.HeaderText = "Tên Bằng Cấp";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "HeSoLuong";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column3.HeaderText = "Hệ Số Lương";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "LuongNgayNghi";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column4.HeaderText = "Lương Ngày Nghỉ";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 200;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "MoTa";
+            this.Column5.HeaderText = "Mô Tả";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 820;
             // 
             // label4
             // 
@@ -188,73 +255,6 @@
             this.txt_ten.Name = "txt_ten";
             this.txt_ten.Size = new System.Drawing.Size(239, 22);
             this.txt_ten.TabIndex = 0;
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.BackColor = System.Drawing.Color.White;
-            this.btn_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Luu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.Image")));
-            this.btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Luu.Location = new System.Drawing.Point(744, 35);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(88, 41);
-            this.btn_Luu.TabIndex = 4;
-            this.btn_Luu.Text = "LƯU";
-            this.btn_Luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Luu.UseVisualStyleBackColor = false;
-            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.White;
-            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
-            this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Xoa.Location = new System.Drawing.Point(744, 76);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(88, 41);
-            this.btn_Xoa.TabIndex = 5;
-            this.btn_Xoa.Text = "XÓA";
-            this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Xoa.UseVisualStyleBackColor = false;
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ID";
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Ten_BC";
-            this.Column2.HeaderText = "Tên Bằng Cấp";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "HeSoLuong";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column3.HeaderText = "Hệ Số Lương";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "LuongNgayNghi";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column4.HeaderText = "Lương Ngày Nghỉ";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "MoTa";
-            this.Column5.HeaderText = "Mô Tả";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 820;
             // 
             // User_BangCap
             // 

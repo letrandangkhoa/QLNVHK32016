@@ -9,12 +9,13 @@ namespace Pham_Thi_Chieu
 {
     class Database
     {
-        public static string Sever = @"MAYTINH-2TJJG6M\SQLEXPRESS";
+       // public static string Sever = @"MAYTINH-2TJJG6M\SQLEXPRESS";
+        public static string Sever = @".\SQLEXPRESS";
         public static string Data = "QL_LuongNV_DHM";
         public static bool intergratedMode = true;
         public static string Username = "";
         public static string Password = "";
-        SqlConnection sqlcon = new SqlConnection();
+        public SqlConnection sqlcon = new SqlConnection();
         DataTable dt = new DataTable();
         DataSet ds = new DataSet();
         SqlDataAdapter da = new SqlDataAdapter();
@@ -35,14 +36,32 @@ namespace Pham_Thi_Chieu
         public DataTable Excute(string sql)
         {
             da = new SqlDataAdapter(sql, sqlcon);
+            SqlCommandBuilder cb = new SqlCommandBuilder(da);
             ds = new DataSet();
             da.Fill(ds);
             return ds.Tables[0];
+        }
+        public object ExcuteSacala(string sql)
+        {
+            sqlcon.Open();
+            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
+            object ob = sqlcom.ExecuteScalar();            
+            sqlcon.Close();
+            return ob;
         }
         public void ExcuteNonQuery(string sql)
         {
             sqlcon.Open();
             SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
+            sqlcom.ExecuteNonQuery();
+            sqlcom.Dispose();
+            sqlcon.Close();
+        }
+        public void ExcuteNonQuery(string sql, SqlParameter prm)
+        {
+            sqlcon.Open();
+            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
+            sqlcom.Parameters.Add(prm);
             sqlcom.ExecuteNonQuery();
             sqlcom.Dispose();
             sqlcon.Close();
@@ -53,5 +72,10 @@ namespace Pham_Thi_Chieu
             SqlCommandBuilder combuid = new SqlCommandBuilder(da);
             da.Update(table);
         }
+        public void Update()
+        {
+            da.Update(ds);
+        }
+
     }
 }

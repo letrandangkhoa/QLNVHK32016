@@ -1,7 +1,6 @@
 F:\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe.config
 F:\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe
 F:\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.pdb
-F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csprojResolveAssemblyReference.cache
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Login.resources
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Properties.Resources.resources
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csproj.GenerateResource.Cache
@@ -12,26 +11,45 @@ F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_NhanVien.resources
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_BangCap.resources
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_PhongBan.resources
 F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_ChucVu.resources
-F:\Pham_Thi_Chieu\bin\Debug\mscorlib.dll
-F:\Pham_Thi_Chieu\bin\Debug\normidna.nlp
-F:\Pham_Thi_Chieu\bin\Debug\normnfc.nlp
-F:\Pham_Thi_Chieu\bin\Debug\normnfd.nlp
-F:\Pham_Thi_Chieu\bin\Debug\normnfkc.nlp
-F:\Pham_Thi_Chieu\bin\Debug\normnfkd.nlp
-C:\Users\Khoa\Desktop\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe.config
-C:\Users\Khoa\Desktop\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.exe
-C:\Users\Khoa\Desktop\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.pdb
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe.config
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.exe
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.pdb
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.pdb
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csprojResolveAssemblyReference.cache
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.frm_Main.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Login.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Properties.Resources.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_BangCap.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_ChucVu.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_NhanVien.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_PhongBan.resources
-C:\Users\Khoa\Desktop\LTCSDL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csproj.GenerateResource.Cache
+F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csprojResolveAssemblyReference.cache
+F:\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.TinhLuong.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe.config
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.exe
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.pdb
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.pdb
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csprojResolveAssemblyReference.cache
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.frm_Main.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Login.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Properties.Resources.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_BangCap.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_ChucVu.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_NhanVien.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_PhongBan.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csproj.GenerateResource.Cache
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_Report.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\RdlCompile.cache
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\RdlCompile.compiled
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_TinhLuong.resources
+F:\Hoc_Tap\Lap Trinh\Lap Trinh C#\Chieu\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.UserDoiMatKhau.resources
+F:\LTCS DL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe.config
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.exe
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.pdb
+F:\LTCS DL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.exe
+F:\LTCS DL\Pham_Thi_Chieu\bin\Debug\Pham_Thi_Chieu.pdb
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.frm_Main.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Login.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.Properties.Resources.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.UserDoiMatKhau.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_TinhLuong.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_BangCap.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_ChucVu.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_NhanVien.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_PhongBan.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_Report.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csproj.GenerateResource.Cache
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\RdlCompile.cache
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\RdlCompile.compiled
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu.csprojResolveAssemblyReference.cache
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_HeSoCoBan.resources
+F:\LTCS DL\Pham_Thi_Chieu\obj\Debug\Pham_Thi_Chieu._User_Control.User_KhoanPhiKhac.resources
