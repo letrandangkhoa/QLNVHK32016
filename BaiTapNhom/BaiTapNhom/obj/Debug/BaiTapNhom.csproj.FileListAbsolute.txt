@@ -1,0 +1,10 @@
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\bin\Debug\BaiTapNhom.exe.config
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\bin\Debug\BaiTapNhom.exe
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\bin\Debug\BaiTapNhom.pdb
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.csprojResolveAssemblyReference.cache
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.Properties.Resources.resources
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.csproj.GenerateResource.Cache
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.exe
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.pdb
+C:\Users\Khoa\Desktop\btn\BaiTapNhom\BaiTapNhom\obj\Debug\BaiTapNhom.Quanlynhanvien.resources
